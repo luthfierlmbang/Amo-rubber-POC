@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> title-meta title="Photo Album - AMO Rubber" }}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <!-- Page Title / Hero -->
+    <section class="overflow-hidden relative size-full lg:pt-50 pt-25 pb-12.5 bg-default-100">
+        <div class="container-full relative z-10">
+            <div class="text-center mb-12">
+                <div class="mb-4 inline-flex items-center mx-auto gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 motion-preset-slide-up motion-duration-500">
+                    <div class="size-2 bg-primary"></div>
+                    <div class="text-sm text-default-900">Visual Showcase</div>
+                </div>
+
+                <h1 class="lg:text-7xl md:text-[56px] text-[48px] font-bold text-default-900 motion-preset-slide-up motion-duration-500 motion-delay-150">Photo Album</h1>
+                <p class="text-default-600 mt-4 max-w-xl mx-auto motion-preset-slide-up motion-duration-500 motion-delay-300">Take a virtual tour of our production facility in Chonburi, Thailand, and explore our high-quality rubber sheet profiles.</p>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 pointer-events-none">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(../images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+    </section>
+
+    <!-- Manufacturing Facility Section -->
+    <section class="relative size-full lg:py-50 md:py-25 py-20">
+        <div class="container relative z-10">
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 mb-4">
+                    <div class="size-2 bg-primary"></div>
+                    <div class="text-sm text-default-900">Production Infrastructure</div>
+                </div>
+                <h2 class="lg:text-[58px] md:text-[34px] text-[28px] font-bold text-default-900 leading-none mb-4">Manufacturing Facility</h2>
+                <p class="text-default-600 mt-2">Modern machinery for processing calendering, continuous rotocure vulcanization, and compression molded sheets.</p>
+            </div>
+
+            <div data-toggle="gallery" data-thumbnails="true" class="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+                <!-- Facility 1 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/about/about-image.webp" class="block overflow-hidden rounded-lg mb-4">
+                        <img src="/assets/images/about/about-image.webp" alt="Calendering Line" class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="mt-auto">
+                        <h4 class="text-base font-bold text-default-900">Calendering Line</h4>
+                        <p class="text-sm text-default-500 mt-1">High-volume sheets thickness control calibration.</p>
+                    </div>
+                </div>
+
+                <!-- Facility 2 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/case-studies/1.webp" class="block overflow-hidden rounded-lg mb-4">
+                        <img src="/assets/images/case-studies/1.webp" alt="Rotocure Vulcanization System" class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="mt-auto">
+                        <h4 class="text-base font-bold text-default-900">Rotocure System</h4>
+                        <p class="text-sm text-default-500 mt-1">Continuous curing process for joint-free rolls.</p>
+                    </div>
+                </div>
+
+                <!-- Facility 3 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/case-studies/2.webp" class="block overflow-hidden rounded-lg mb-4">
+                        <img src="/assets/images/case-studies/2.webp" alt="Compression Vulcanization Press" class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="mt-auto">
+                        <h4 class="text-base font-bold text-default-900">Compression Molding Press</h4>
+                        <p class="text-sm text-default-500 mt-1">Heavy-duty thick rubber plate vulcanization.</p>
+                    </div>
+                </div>
+
+                <!-- Facility 4 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/case-studies/3.webp" class="block overflow-hidden rounded-lg mb-4">
+                        <img src="/assets/images/case-studies/3.webp" alt="Quality Control Testing" class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="mt-auto">
+                        <h4 class="text-base font-bold text-default-900">Quality Inspection Lab</h4>
+                        <p class="text-sm text-default-500 mt-1">Rigorous hardness, tensile, and UV aging testing.</p>
+                    </div>
+                </div>
+
+                <!-- Facility 5 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/case-studies/4.webp" class="block overflow-hidden rounded-lg mb-4">
+                        <img src="/assets/images/case-studies/4.webp" alt="Warehouse and Logistics" class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="mt-auto">
+                        <h4 class="text-base font-bold text-default-900">Warehouse &amp; Logistics</h4>
+                        <p class="text-sm text-default-500 mt-1">Ready stock of rolls and gaskets for immediate delivery.</p>
+                    </div>
+                </div>
+
+                <!-- Facility 6 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/about/hero.webp" class="block overflow-hidden rounded-lg mb-4">
+                        <img src="/assets/images/about/hero.webp" alt="Raw Material Prep Area" class="w-full h-56 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="mt-auto">
+                        <h4 class="text-base font-bold text-default-900">Compound Compounding Mixer</h4>
+                        <p class="text-sm text-default-500 mt-1">Precise blending of elastomers, fillers, and vulcanizing agents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 pointer-events-none">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(/assets/images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="relative size-full lg:py-50 md:py-25 py-20 bg-default-50 border-t border-default-200">
+        <div class="container relative z-10">
+            <div class="mb-12">
+                <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 mb-4">
+                    <div class="size-2 bg-primary"></div>
+                    <div class="text-sm text-default-900">Certified Elastomers</div>
+                </div>
+                <h2 class="lg:text-[58px] md:text-[34px] text-[28px] font-bold text-default-900 leading-none mb-4">Product Profiles</h2>
+                <p class="text-default-600 mt-2">Browse the visual specifications and colors of our high-demand rubber sheets.</p>
+            </div>
+
+            <div data-toggle="gallery" data-thumbnails="true" class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+                <!-- Product 1 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-1.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-1.png" alt="Silicone Sheet (Red/Orange)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">Silicone Sheet (Red)</h4>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-2.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-2.png" alt="Silicone Sponge Sheet (Orange-Red)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">Silicone Sponge Sheet</h4>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-3.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-3.png" alt="EPDM Rubber Sheet (Black)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">EPDM Rubber Sheet</h4>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-4.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-4.png" alt="Nitrile NBR Sheet (Black)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">Nitrile NBR Sheet</h4>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-5.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-5.png" alt="Neoprene CR Sheet (Black)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">Neoprene CR Sheet</h4>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-6.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-6.png" alt="Viton FKM Sheet (Black)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">Viton FKM Sheet</h4>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-7.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-7.png" alt="Pure Gum Natural Rubber Sheet (Beige)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">Natural Rubber Sheet</h4>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="group relative overflow-hidden rounded-xl border border-default-300 bg-white p-4 hover:border-primary hover:shadow-lg transition-all duration-300 flex flex-col">
+                    <a href="/assets/images/products/product-8.png" class="block overflow-hidden rounded-lg mb-3">
+                        <img src="/assets/images/products/product-8.png" alt="SBR Industrial Rubber Sheet (Black)" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <h4 class="text-sm font-bold text-default-900 mt-auto">SBR Industrial Sheet</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 pointer-events-none">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(/assets/images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+    </section>
+
+    {{> footer }}
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "AMO Rubber",
+  "fullname": "PT Abadi Makmur Optimal",
+  "address_hq": "Jababeka II, Cikarang Selatan, Bekasi, Jawa Barat, Indonesia",
+  "address_factory": "Chonburi, Thailand",
+  "phones": {
+    "main": "+62 21-5032-7388",
+    "wa": "+62 811-817-7388",
+    "wa_raw": "628118177388"
+  },
+  "emails": {
+    "group": "group@amo-rubber.com",
+    "marketing": "digital_marketing@amo-rubber.com"
+  },
+  "social": {
+    "facebook": "https://facebook.com/amorubber"
+  },
+  "hours": "Mon - Fri: 08.00 - 17.00, Sat: 08.00 - 12.00"
+}

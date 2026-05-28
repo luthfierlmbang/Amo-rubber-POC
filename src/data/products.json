@@ -1,0 +1,317 @@
+[
+  {
+    "id": "ASI60030120",
+    "name": "Red Silicone Rubber Sheet (Grade A)",
+    "slug": "red-silicone-rubber-sheet-grade-a",
+    "category": "silicone-rubber-sheet",
+    "grade": "Premium",
+    "specs": {
+      "hardness_sh": 60,
+      "thickness_mm": 3,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Red"
+    },
+    "compliance": ["FDA", "SGS", "REACH", "RoHS"],
+    "images": [
+      "assets/images/products/product-1.png",
+      "assets/images/products/product-2.png"
+    ],
+    "description": "High performance Red Silicone Rubber Sheet designed for high temperature sealing, insulation, and gasketing applications. Outstanding resistance to heat, weathering, and ozone makes it perfect for aerospace, automotive, and general manufacturing industries.",
+    "related_skus": ["ASS25060100", "AFD60030120"]
+  },
+  {
+    "id": "ASS25060100",
+    "name": "High Temp Silicone Sponge Sheet",
+    "slug": "high-temp-silicone-sponge-sheet",
+    "category": "silicone-sponge-sheet",
+    "grade": "Standard",
+    "specs": {
+      "hardness_sh": 25,
+      "thickness_mm": 6,
+      "width_m": 1.0,
+      "length_m": 10,
+      "color": "Orange-Red"
+    },
+    "compliance": ["FDA", "SGS", "RoHS"],
+    "images": [
+      "assets/images/products/product-2.png",
+      "assets/images/products/product-1.png"
+    ],
+    "description": "Closed-cell Silicone Sponge Sheet providing excellent sealing capabilities under low compression force. Extremely soft and flexible with excellent thermal insulation and vibration dampening properties.",
+    "related_skus": ["ASI60030120", "AFD60030120"]
+  },
+  {
+    "id": "AEP65040120",
+    "name": "Weatherproof EPDM Rubber Sheet",
+    "slug": "weatherproof-epdm-rubber-sheet",
+    "category": "epdm-rubber-sheet",
+    "grade": "Standard",
+    "specs": {
+      "hardness_sh": 65,
+      "thickness_mm": 4,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Black"
+    },
+    "compliance": ["SGS", "REACH", "RoHS"],
+    "images": [
+      "assets/images/products/product-3.png",
+      "assets/images/products/product-4.png"
+    ],
+    "description": "Top-tier Ethylene Propylene Diene Monomer (EPDM) sheet designed to withstand ozone, UV, acids, alkalis, and severe outdoor environment weathering. Ideal for expansion joints, seals, and roofing membranes.",
+    "related_skus": ["ANB70050120", "ANE65050120"]
+  },
+  {
+    "id": "ANB70050120",
+    "name": "Oil-Resistant Nitrile (NBR) Rubber Sheet",
+    "slug": "oil-resistant-nitrile-nbr-rubber-sheet",
+    "category": "nbr-rubber-sheet",
+    "grade": "Premium",
+    "specs": {
+      "hardness_sh": 70,
+      "thickness_mm": 5,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Black"
+    },
+    "compliance": ["SGS", "REACH", "RoHS"],
+    "images": [
+      "assets/images/products/product-4.png",
+      "assets/images/products/product-5.png"
+    ],
+    "description": "High-grade Nitrile (NBR) rubber sheet showing exceptional resistance to grease, oil, diesel, gasoline, and hydrocarbon solvents. Widely used for pipeline sealing, fuel line gaskets, and industrial maintenance.",
+    "related_skus": ["AEP65040120", "AVT75030120"]
+  },
+  {
+    "id": "ANE65050120",
+    "name": "Marine Neoprene (CR) Rubber Sheet",
+    "slug": "marine-neoprene-cr-rubber-sheet",
+    "category": "neoprene-cr-rubber-sheet",
+    "grade": "Standard",
+    "specs": {
+      "hardness_sh": 65,
+      "thickness_mm": 5,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Black"
+    },
+    "compliance": ["SGS", "RoHS"],
+    "images": [
+      "assets/images/products/product-5.png",
+      "assets/images/products/product-6.png"
+    ],
+    "description": "Chloroprene Rubber (CR) Neoprene sheet providing a balanced set of chemical, environmental, and physical properties. Perfect for marine settings with mild resistance to petroleum, weathering, ozone, and sea water.",
+    "related_skus": ["AEP65040120", "ASB65080120"]
+  },
+  {
+    "id": "AVT75030120",
+    "name": "Premium Viton (FKM) Chemical Resistant Sheet",
+    "slug": "premium-viton-fkm-chemical-resistant-sheet",
+    "category": "viton-fkm-rubber-sheet",
+    "grade": "High Grade",
+    "specs": {
+      "hardness_sh": 75,
+      "thickness_mm": 3,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Black"
+    },
+    "compliance": ["SGS", "REACH", "RoHS"],
+    "images": [
+      "assets/images/products/product-6.png",
+      "assets/images/products/product-7.png"
+    ],
+    "description": "Genuine Viton (FKM) fluoropolymer elastomer sheet delivering extreme temperature (up to 250°C) and supreme chemical resistance. Impermeable to fuels, aggressive acids, hydrocarbons, and chlorinated solvents.",
+    "related_skus": ["ANB70050120", "APF75020100"]
+  },
+  {
+    "id": "ANR40060120",
+    "name": "Super Elastic Pure Gum Natural Rubber Sheet",
+    "slug": "super-elastic-pure-gum-natural-rubber-sheet",
+    "category": "nr-pure-gum-sheet",
+    "grade": "Standard",
+    "specs": {
+      "hardness_sh": 40,
+      "thickness_mm": 6,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Beige"
+    },
+    "compliance": ["SGS", "REACH"],
+    "images": [
+      "assets/images/products/product-7.png",
+      "assets/images/products/product-8.png"
+    ],
+    "description": "Pure gum Natural Rubber (NR) sheet boasting incredible elasticity, mechanical strength, tear strength, and abrasion resistance. Designed for heavy impact chutes, sandblasting cabins, and scrapers.",
+    "related_skus": ["ASB65080120", "ARG70030100"]
+  },
+  {
+    "id": "ASB65080120",
+    "name": "General Purpose SBR Industrial Rubber Sheet",
+    "slug": "general-purpose-sbr-industrial-rubber-sheet",
+    "category": "sbr-rubber-sheet",
+    "grade": "Basic",
+    "specs": {
+      "hardness_sh": 65,
+      "thickness_mm": 8,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Black"
+    },
+    "compliance": ["SGS", "RoHS"],
+    "images": [
+      "assets/images/products/product-8.png",
+      "assets/images/products/product-1.png"
+    ],
+    "description": "Styrene-Butadiene Rubber (SBR) sheet suitable for gaskets, liners, and general barriers. Possesses good impact strength, physical durability, and abrasion resistance at an economical price point.",
+    "related_skus": ["ANR40060120", "ANE65050120"]
+  },
+  {
+    "id": "ABT60040120",
+    "name": "Gas Impermeable Butyl Rubber Sheet",
+    "slug": "gas-impermeable-butyl-rubber-sheet",
+    "category": "butyl-rubber-sheet",
+    "grade": "Standard",
+    "specs": {
+      "hardness_sh": 60,
+      "thickness_mm": 4,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Black"
+    },
+    "compliance": ["SGS", "REACH", "RoHS"],
+    "images": [
+      "assets/images/products/product-1.png",
+      "assets/images/products/product-3.png"
+    ],
+    "description": "High density Butyl rubber sheet offering exceptionally low gas permeability, excellent water resistance, and robust resistance to acids, alkalis, and ozone. Excellent electrical insulation qualities.",
+    "related_skus": ["AEP65040120", "AVT75030120"]
+  },
+  {
+    "id": "AHP65030120",
+    "name": "Corrosion Resistant Hypalon Rubber Sheet",
+    "slug": "corrosion-resistant-hypalon-rubber-sheet",
+    "category": "hypalon-rubber-sheet",
+    "grade": "High Grade",
+    "specs": {
+      "hardness_sh": 65,
+      "thickness_mm": 3,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "Blue/Grey"
+    },
+    "compliance": ["SGS", "REACH"],
+    "images": [
+      "assets/images/products/product-2.png",
+      "assets/images/products/product-4.png"
+    ],
+    "description": "Hypalon (CSM) rubber sheet designed to provide excellent resistance to extreme weather, environmental exposure, flame retardancy, and aggressive oxidizing chemicals, oils, and strong acids.",
+    "related_skus": ["AVT75030120", "ABT60040120"]
+  },
+  {
+    "id": "APF75020100",
+    "name": "High Temperature Virgin PTFE Sheet",
+    "slug": "high-temperature-virgin-ptfe-sheet",
+    "category": "ptfe-sheet",
+    "grade": "Premium",
+    "specs": {
+      "hardness_sh": 75,
+      "thickness_mm": 2,
+      "width_m": 1.0,
+      "length_m": 10,
+      "color": "White"
+    },
+    "compliance": ["FDA", "SGS", "REACH", "RoHS"],
+    "images": [
+      "assets/images/products/product-3.png",
+      "assets/images/products/product-5.png"
+    ],
+    "description": "Pure Virgin PTFE (Polytetrafluoroethylene) sheet featuring near-total chemical inertness, a wide operating temperature (-200°C to +260°C), low coefficient of friction, and superior dielectric insulation.",
+    "related_skus": ["AVT75030120", "AFD60030120"]
+  },
+  {
+    "id": "AES65020100",
+    "name": "Anti-Static ESD Workbench Rubber Sheet",
+    "slug": "anti-static-esd-workbench-rubber-sheet",
+    "category": "esd-rubber-sheet",
+    "grade": "Standard",
+    "specs": {
+      "hardness_sh": 65,
+      "thickness_mm": 2,
+      "width_m": 1.0,
+      "length_m": 10,
+      "color": "Green (Top) / Black (Bottom)"
+    },
+    "compliance": ["SGS", "RoHS"],
+    "images": [
+      "assets/images/products/product-4.png",
+      "assets/images/products/product-6.png"
+    ],
+    "description": "Dual-layer Electrostatic Dissipative (ESD) rubber mat sheet. The top static-dissipative layer drains electricity, while the bottom conductive layer grounds it, protecting delicate microelectronics and servers.",
+    "related_skus": ["ASB65080120", "AIN65050100"]
+  },
+  {
+    "id": "AFD60030120",
+    "name": "Food Grade White FDA Silicone Rubber Sheet",
+    "slug": "food-grade-white-fda-silicone-rubber-sheet",
+    "category": "fda-grade-rubber-sheet",
+    "grade": "FDA",
+    "specs": {
+      "hardness_sh": 60,
+      "thickness_mm": 3,
+      "width_m": 1.2,
+      "length_m": 10,
+      "color": "White"
+    },
+    "compliance": ["FDA", "SGS", "REACH", "RoHS"],
+    "images": [
+      "assets/images/products/product-5.png",
+      "assets/images/products/product-7.png"
+    ],
+    "description": "White food-grade Silicone rubber sheet fully compliant with FDA regulation CFR 21 177.2600. Odorless, tasteless, non-toxic, and resistant to extreme temperature fluctuations, ideal for food processing and medical packing.",
+    "related_skus": ["ASI60030120", "APF75020100"]
+  },
+  {
+    "id": "AIN65050100",
+    "name": "High Voltage Insulating Switchboard Mat (IEC61111)",
+    "slug": "high-voltage-insulating-switchboard-mat-iec61111",
+    "category": "insulation-rubber-sheet-iec61111",
+    "grade": "High Grade",
+    "specs": {
+      "hardness_sh": 65,
+      "thickness_mm": 5,
+      "width_m": 1.0,
+      "length_m": 10,
+      "color": "Black"
+    },
+    "compliance": ["IEC61111", "SGS", "RoHS"],
+    "images": [
+      "assets/images/products/product-6.png",
+      "assets/images/products/product-8.png"
+    ],
+    "description": "High voltage dielectric safety mat compliant with IEC 61111 Class 2. Provides shock hazard protection for personnel working near high voltage switchboards, transformers, and sub-stations up to 17kV.",
+    "related_skus": ["AES65020100", "ASB65080120"]
+  },
+  {
+    "id": "ARG70030100",
+    "name": "Flange Pipe Rubber Gasket Seal",
+    "slug": "flange-pipe-rubber-gasket-seal",
+    "category": "rubber-gasket",
+    "grade": "Standard",
+    "specs": {
+      "hardness_sh": 70,
+      "thickness_mm": 3,
+      "width_m": 1.0,
+      "length_m": 1,
+      "color": "Black"
+    },
+    "compliance": ["SGS", "RoHS"],
+    "images": [
+      "assets/images/products/product-7.png",
+      "assets/images/products/product-2.png"
+    ],
+    "description": "Industrial grade pre-cut flange gasket designed for water, air, and steam pipe seals. Manufactured with high-strength reinforced rubber compound for long-term leakage prevention under high pressure.",
+    "related_skus": ["ANR40060120", "ASB65080120"]
+  }
+]

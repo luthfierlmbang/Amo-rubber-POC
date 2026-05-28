@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "silicone-rubber-sheet",
+    "name": "Silicone Rubber Sheet",
+    "short_desc": "High-temperature resistant, food-grade silicone rubber sheets suitable for extreme environments.",
+    "use_cases": ["Food packaging gaskets", "High-temperature insulation", "Medical devices seals", "Automotive gasket seals"],
+    "image": "/assets/images/products/product-1.png"
+  },
+  {
+    "slug": "silicone-sponge-sheet",
+    "name": "Silicone Sponge Sheet",
+    "short_desc": "Closed-cell silicone sponge sheets offering excellent cushioning, sealing, and thermal insulation properties.",
+    "use_cases": ["Soft gaskets & cushioning", "Vibration dampening", "Outdoor environmental seals", "Thermal shielding"],
+    "image": "/assets/images/products/product-2.png"
+  },
+  {
+    "slug": "epdm-rubber-sheet",
+    "name": "EPDM Rubber Sheet",
+    "short_desc": "Outstanding resistance to weathering, ozone, UV rays, and water, ideal for outdoor and automotive usage.",
+    "use_cases": ["Outdoor roofing seals", "Automotive window and door strips", "Steam hose linings", "Water pipe gaskets"],
+    "image": "/assets/images/products/product-3.png"
+  },
+  {
+    "slug": "nbr-rubber-sheet",
+    "name": "NBR Rubber Sheet",
+    "short_desc": "Nitrile butadiene rubber sheet with high resistance to oil, fuel, grease, and petroleum solvents.",
+    "use_cases": ["Fuel and oil tank gaskets", "Chemical processing seals", "Oil refiner sealings", "Mechanical engine gaskets"],
+    "image": "/assets/images/products/product-4.png"
+  },
+  {
+    "slug": "neoprene-cr-rubber-sheet",
+    "name": "Neoprene / CR Rubber Sheet",
+    "short_desc": "All-purpose elastomer with balanced properties, offering good resistance to oil, weathering, and abrasion.",
+    "use_cases": ["Marine industry seals", "Electrical insulation covers", "Industrial shock absorption", "Bridge bearing pads"],
+    "image": "/assets/images/products/product-5.png"
+  },
+  {
+    "slug": "viton-fkm-rubber-sheet",
+    "name": "Viton (FKM) Rubber Sheet",
+    "short_desc": "Premium fluorocarbon rubber sheet with extreme resistance to chemical, heat, oil, and aggressive solvents.",
+    "use_cases": ["Petrochemical gaskets", "High-temperature chemical processing", "Aerospace fuel systems", "Acid-resistant seals"],
+    "image": "/assets/images/products/product-6.png"
+  },
+  {
+    "slug": "nr-pure-gum-sheet",
+    "name": "NR / Pure Gum Sheet",
+    "short_desc": "Natural rubber sheets with exceptional elasticity, tensile strength, tear resistance, and wear abrasion resistance.",
+    "use_cases": ["Chute linings", "Sandblasting curtains", "Belt scraper blades", "High elasticity seals"],
+    "image": "/assets/images/products/product-7.png"
+  },
+  {
+    "slug": "sbr-rubber-sheet",
+    "name": "SBR Rubber Sheet",
+    "short_desc": "Styrene-butadiene rubber sheets offering excellent abrasion and wear resistance for general industrial uses.",
+    "use_cases": ["Conveyor belts", "Non-critical gasket linings", "Flange gaskets", "Floor mats"],
+    "image": "/assets/images/products/product-8.png"
+  },
+  {
+    "slug": "butyl-rubber-sheet",
+    "name": "Butyl Rubber Sheet",
+    "short_desc": "High impermeability to gases and excellent chemical resistance, perfect for seals and gas barriers.",
+    "use_cases": ["Inner tubes & gas barriers", "Vacuum seals", "Chemical tank linings", "Acid and alkali resistant gaskets"],
+    "image": "/assets/images/products/product-3.png"
+  },
+  {
+    "slug": "hypalon-rubber-sheet",
+    "name": "Hypalon Rubber Sheet",
+    "short_desc": "CSM elastomer known for its superior resistance to extreme chemicals, weather, and temperatures.",
+    "use_cases": ["Acid storage tanks", "Inflatable boats", "Heavy weathering applications", "High durability gaskets"],
+    "image": "/assets/images/products/product-4.png"
+  },
+  {
+    "slug": "ptfe-sheet",
+    "name": "PTFE Sheet",
+    "short_desc": "Polytetrafluoroethylene sheet featuring extreme chemical inertness, high temperature rating, and very low friction.",
+    "use_cases": ["Corrosive chemical seals", "Non-stick slide guides", "Electrical insulator blocks", "Valve gaskets"],
+    "image": "/assets/images/products/product-2.png"
+  },
+  {
+    "slug": "esd-rubber-sheet",
+    "name": "ESD Rubber Sheet",
+    "short_desc": "Electrostatic dissipative rubber sheets designed to discharge static electricity safely, protecting electronics.",
+    "use_cases": ["Electronic assembly workbenches", "Cleanroom mats", "ESD protection tables", "Semiconductor tooling mats"],
+    "image": "/assets/images/products/product-5.png"
+  },
+  {
+    "slug": "fda-grade-rubber-sheet",
+    "name": "FDA Grade Rubber Sheet",
+    "short_desc": "Food-grade elastomer complying with FDA requirements for food contact, pharmaceutical, and hygienic uses.",
+    "use_cases": ["Food processing belts", "Breweries & beverage conduits", "Pharmaceutical packaging seals", "Dairy equipment gaskets"],
+    "image": "/assets/images/products/product-1.png"
+  },
+  {
+    "slug": "insulation-rubber-sheet-iec61111",
+    "name": "Insulation Rubber Sheet (IEC61111)",
+    "short_desc": "High voltage insulating mats certified to IEC 61111, protecting workers from electrical shock.",
+    "use_cases": ["Substation floor mats", "Switchboard frontings", "High voltage panel coverings", "Electrical maintenance safety mats"],
+    "image": "/assets/images/products/product-8.png"
+  },
+  {
+    "slug": "rubber-gasket",
+    "name": "Rubber Gasket",
+    "short_desc": "Precision cut and custom molded rubber gaskets for pipe flanges, valves, pumps, and machinery flanges.",
+    "use_cases": ["Pipe flange sealing", "Pump housing gaskets", "Engine head gaskets", "Hydraulic system seals"],
+    "image": "/assets/images/products/product-7.png"
+  }
+]

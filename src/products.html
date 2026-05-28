@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> title-meta title="Our Catalogue - AMO Rubber" }}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <section class="overflow-hidden relative size-full lg:pt-50 pt-25 pb-12.5 bg-default-100">
+        <div class="container-full relative z-10">
+
+            <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 motion-preset-slide-up motion-duration-500">
+                <div class="size-2 bg-primary"></div>
+                <div class="text-sm text-default-900">B2B Material Catalogue</div>
+            </div>
+
+            <div class="grid xl:grid-cols-2 items-center xl:gap-20 gap-12.5 mt-7.5 mb-12">
+                <div>
+                    <h1 class="lg:text-[58px] md:text-[34px] text-[28px] font-bold text-default-900 leading-none motion-preset-slide-up motion-duration-500 motion-delay-150">Our Product Range</h1>
+                    <p class="text-default-600 mt-2 motion-preset-slide-up motion-duration-500 motion-delay-300">Filter and browse our comprehensive selection of certified industrial rubber sheets.</p>
+                </div>
+            </div>
+
+            <!-- Category Filter Chips -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12 max-w-6xl mx-auto">
+                <button data-filter="all" class="filter-btn px-4 py-2 text-xs font-semibold rounded-full border border-default-300 bg-primary text-white hover:border-primary hover:bg-primary hover:text-white transition-all">
+                    All Materials
+                </button>
+                {{#each categories}}
+                <button data-filter="{{this.slug}}" class="filter-btn px-4 py-2 text-xs font-semibold rounded-full border border-default-300 bg-white text-default-800 hover:border-primary transition-all">
+                    {{this.name}}
+                </button>
+                {{/each}}
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid lg:grid-cols-4 md:grid-cols-2 gap-7.5 my-17.5">
+                {{#each products}}
+                <div class="product-card bg-default-950 border border-default-850 rounded py-7.5 px-5 flex flex-col justify-between h-full text-white" data-category="{{this.category}}">
+                    <div>
+                         <h3 class="text-xl font-bold text-white mb-4 truncate" title="{{this.name}}">{{this.name}}</h3>
+                        <a href="/product/{{this.id}}.html" class="block mb-6 overflow-hidden rounded-md">
+                            <img src="/{{this.images.[0]}}" alt="{{this.name}}" class="rounded-md w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                        </a>
+
+                        <p class="mb-6 text-default-400 text-sm line-clamp-3 leading-relaxed">
+                            {{this.description}}
+                        </p>
+                    </div>
+
+                    <div class="mt-auto">
+                        <div class="divide-y divide-default-800 *:py-3 *:flex *:items-center *:justify-between">
+                            <div>
+                                <div class="text-default-500 text-xs">SKU</div>
+                                <div class="text-white text-xs font-mono font-semibold">{{this.id}}</div>
+                            </div>
+                            <div>
+                                <div class="text-default-500 text-xs">Hardness</div>
+                                <div class="text-white text-xs">{{this.specs.hardness_sh}} Sh A</div>
+                            </div>
+                            <div class="pb-0!">
+                                <div class="text-default-500 text-xs">Thickness</div>
+                                <div class="text-white text-xs">{{this.specs.thickness_mm}} mm</div>
+                            </div>
+                        </div>
+
+                        <a href="/product/{{this.id}}.html" class="mt-6 w-full text-center py-2.5 px-4 bg-primary hover:bg-primary-3 text-white text-sm font-semibold rounded-md transition-colors block">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+                {{/each}}
+
+                <!-- Empty State -->
+                <div id="empty-state" class="hidden lg:col-span-4 md:col-span-2 text-center py-16">
+                    <div class="size-16 rounded-full bg-default-200 text-default-600 flex items-center justify-center mx-auto mb-4">
+                        <i class="iconify tabler--search-off size-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-default-800">No products found</h3>
+                    <p class="text-default-500 mt-2">Try choosing a different material filter category.</p>
+                </div>
+            </div>
+
+            <!-- Custom Inquiry CTA -->
+            <div class="bg-default-900 lg:p-12 p-6 bg-[url(/assets/images/cta-bg.png)] bg-no-repeat bg-cover rounded mt-24">
+                <div class="flex lg:flex-row flex-col gap-10 lg:items-center justify-between">
+                    <div>
+                        <h2 class="lg:text-4xl text-2xl font-bold text-white">Custom Compounds &amp; Cuts</h2>
+                        <p class="text-default-300 lg:w-140 mt-2.5 leading-relaxed">Need a specific thickness, hardness rating, or custom pre-cut rubber gasket shapes? Contact our engineers directly with your project requirements.</p>
+                    </div>
+
+                    <div class="grow lg:text-end">
+                        <a href="/contact.html" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-950 transition-all">
+                            <!-- TEXT -->
+                            <span class="py-3.75 ps-6">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Send Request
+                                    </span>
+                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Send Request
+                                    </span>
+                                </span>
+                            </span>
+
+                            <!-- ICON -->
+                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 pointer-events-none">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(/assets/images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+
+    </section>
+
+    {{> footer }}
+
+</body>
+
+</html>

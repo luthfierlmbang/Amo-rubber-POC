@@ -1,0 +1,120 @@
+<!-- Footer -->
+<footer id="footer" class="relative overflow-hidden text-white">
+
+    <!-- Background -->
+    <div class="absolute inset-0 bg-linear-to-br from-black via-black to-[#8c3b2a]"></div>
+
+    <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0">
+        <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+        <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+        <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+        <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+        <div class="border border-dashed border-default-100 w-0.5 h-full opacity-7"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container-full relative z-10 lg:pt-50 pt-25">
+
+        <!-- Top grid -->
+        <div class="grid xl:grid-cols-6 lg:gap-25 gap-12">
+
+            <div class="xl:col-span-2">
+                <!-- Company Bio -->
+                <div class="lg:w-105">
+                    <h4 class="text-[32px] text-white mb-6.5">AMO Rubber</h4>
+                    <p class="text-default-400 mb-5 leading-relaxed">
+                        PT Abadi Makmur Optimal (AMO Rubber) is a trusted manufacturer and B2B supplier of industrial rubber sheets and customized gaskets, serving automotive, aerospace, chemical, and heavy industries globally.
+                    </p>
+                </div>
+            </div>
+
+            <div class="xl:col-span-4">
+                <div class="grid lg:grid-cols-9 md:grid-cols-4 grid-cols-2 lg:gap-10 gap-6">
+                    <!-- Materials list -->
+                    <div class="lg:col-span-3 col-span-2">
+                        <h5 class="lg:text-[20px] md:text-lg text-base text-white mb-7.5">Our Materials</h5>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-2">
+                            {{#each categories}}
+                            <a href="/products/{{this.slug}}.html" class="text-default-400 text-xs hover:text-primary leading-tight">{{this.name}}</a>
+                            {{/each}}
+                        </div>
+                    </div>
+
+                    <!-- Quick links -->
+                    <div class="lg:col-span-2">
+                        <h5 class="lg:text-[20px] md:text-lg text-base text-white mb-7.5">Quick Links</h5>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="/index.html" class="text-default-400 hover:text-primary">Home</a></li>
+                            <li><a href="/about.html" class="text-default-400 hover:text-primary">About Us</a></li>
+                            <li><a href="/products.html" class="text-default-400 hover:text-primary">Our Catalogue</a></li>
+                            <li><a href="/gallery.html" class="text-default-400 hover:text-primary">Photo Album</a></li>
+                            <li><a href="/contact.html" class="text-default-400 hover:text-primary">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact info -->
+                    <div class="lg:col-span-2">
+                        <h5 class="lg:text-[20px] md:text-lg text-base text-white mb-7.5">Contact Info</h5>
+                        <ul class="space-y-3 text-sm text-default-400">
+                            <li class="leading-relaxed">
+                                <strong>HQ:</strong> Jababeka II, Cikarang Selatan, Bekasi, Jawa Barat
+                            </li>
+                            <li class="leading-relaxed">
+                                <strong>Factory:</strong> Chonburi, Thailand
+                            </li>
+                            <li>
+                                <a href="tel:{{company.phones.main}}" class="hover:text-primary">{{company.phones.main}}</a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/{{company.phones.wa_raw}}" target="_blank" class="hover:text-primary">{{company.phones.wa}} (WA)</a>
+                            </li>
+                            <li>
+                                <a href="mailto:{{company.emails.group}}" class="hover:text-primary font-medium text-xs truncate block max-w-full" title="{{company.emails.group}}">{{company.emails.group}}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Business hours -->
+                    <div class="lg:col-span-2">
+                        <h5 class="lg:text-[20px] md:text-lg text-base text-white mb-7.5">Business Hours</h5>
+                        <ul class="space-y-3 text-sm text-default-400">
+                            <li>Mon to Fri: 08:00 – 17:00</li>
+                            <li>Saturday: 08:00 – 12:00</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border border-dashed h-px border-default-100 opacity-10 my-16 lg:-mx-12.5 md:-mx-7.5 -mx-3.75"></div>
+
+        <!-- Bottom bar -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-white/60">
+
+            <p>&copy; 2025 PT Abadi Makmur Optimal. All rights reserved.</p>
+
+            <div class="flex items-center gap-6">
+                <a href="{{company.social.facebook}}" target="_blank" class="flex items-center gap-2 hover:text-white">
+                    <i class="iconify tabler--brand-facebook-filled size-4"></i>
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Huge background text -->
+    <div class="lg:text-[15em] md:text-[7em] text-[4em] lg:-mt-25 translate-y-1/2 font-bold text-white/5 text-center leading-none pointer-events-none">
+        AMO RUBBER<sup class="text-[0.75em]">®</sup>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a id="wa-float" href="https://wa.me/{{company.phones.wa_raw}}?text=Hi%20AMO%20Rubber%2C%20I%20would%20like%20to%20inquire%20about%20your%20products."
+       target="_blank"
+       class="fixed bottom-6 right-6 z-50 size-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 opacity-0 invisible">
+        <i class="iconify tabler--brand-whatsapp size-7 text-white"></i>
+    </a>
+
+</footer>

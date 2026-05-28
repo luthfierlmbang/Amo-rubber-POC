@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> title-meta title=category.name }}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <section class="overflow-hidden relative size-full lg:pt-50 pt-25 pb-12.5 bg-default-100">
+        <div class="container-full relative z-10">
+
+            <!-- Breadcrumb -->
+            <nav class="flex mb-8 text-sm text-default-600 font-semibold" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="/index.html" class="hover:text-primary transition-colors flex items-center gap-1.5">
+                            <i class="iconify tabler--home size-4"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="iconify tabler--chevron-right size-4 text-default-400 mx-1"></i>
+                            <a href="/products.html" class="hover:text-primary transition-colors">Products</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="iconify tabler--chevron-right size-4 text-default-400 mx-1"></i>
+                            <span class="text-default-400" aria-current="page">{{category.name}}</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <div class="inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 motion-preset-slide-up motion-duration-500">
+                <div class="size-2 bg-primary"></div>
+                <div class="text-sm text-default-900">Material Category</div>
+            </div>
+
+            <div class="grid xl:grid-cols-2 items-center xl:gap-20 gap-12.5 mt-7.5 mb-12">
+                <div>
+                    <h1 class="lg:text-[58px] md:text-[34px] text-[28px] font-bold text-default-900 leading-none motion-preset-slide-up motion-duration-500 motion-delay-150">{{category.name}}</h1>
+                    <p class="text-default-600 mt-2 motion-preset-slide-up motion-duration-500 motion-delay-300">{{category.short_desc}}</p>
+                </div>
+            </div>
+
+            <!-- Use cases -->
+            <div class="mb-10 max-w-6xl mx-auto bg-white border border-default-300 p-8 rounded-xl">
+                <h3 class="text-lg font-bold text-default-900 mb-4">Common Applications</h3>
+                <div class="flex flex-wrap gap-3">
+                    {{#each category.use_cases}}
+                    <span class="px-4 py-2 bg-default-50 border border-default-200 text-default-800 text-xs font-semibold rounded-full flex items-center gap-2">
+                        <i class="iconify tabler--circle-check size-4 text-primary"></i>
+                        {{this}}
+                    </span>
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- Spec Range Table -->
+            <div class="mb-10 max-w-6xl mx-auto bg-white border border-default-300 p-8 rounded-xl">
+                <h3 class="text-lg font-bold text-default-900 mb-4">Compound Technical Specifications</h3>
+                <div class="grid sm:grid-cols-3 gap-6 text-sm text-default-800">
+                    <div class="border-b sm:border-b-0 sm:border-r border-default-200 pb-4 sm:pb-0 sm:pr-6">
+                        <span class="text-xs text-default-500 font-bold block mb-1">Standard Hardness</span>
+                        <span class="text-lg font-bold text-default-900">40 to 80 Shore A</span>
+                    </div>
+                    <div class="border-b sm:border-b-0 sm:border-r border-default-200 pb-4 sm:pb-0 sm:pr-6">
+                        <span class="text-xs text-default-500 font-bold block mb-1">Standard Thickness</span>
+                        <span class="text-lg font-bold text-default-900">1mm to 20mm</span>
+                    </div>
+                    <div>
+                        <span class="text-xs text-default-500 font-bold block mb-1">Availability</span>
+                        <span class="text-lg font-bold text-default-900">Stock rolls &amp; Custom orders</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid lg:grid-cols-4 md:grid-cols-2 gap-7.5 my-17.5">
+                {{#each products}}
+                <div class="product-card bg-default-950 border border-default-850 rounded py-7.5 px-5 flex flex-col justify-between h-full text-white" data-category="{{this.category}}">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4 truncate" title="{{this.name}}">{{this.name}}</h3>
+                        <a href="/product/{{this.id}}.html" class="block mb-6 overflow-hidden rounded-md">
+                            <img src="/{{this.images.[0]}}" alt="{{this.name}}" class="rounded-md w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
+                        </a>
+
+                        <p class="mb-6 text-default-400 text-sm line-clamp-3 leading-relaxed">
+                            {{this.description}}
+                        </p>
+                    </div>
+
+                    <div class="mt-auto">
+                        <div class="divide-y divide-default-800 *:py-3 *:flex *:items-center *:justify-between">
+                            <div>
+                                <div class="text-default-500 text-xs">SKU</div>
+                                <div class="text-white text-xs font-mono font-semibold">{{this.id}}</div>
+                            </div>
+                            <div>
+                                <div class="text-default-500 text-xs">Hardness</div>
+                                <div class="text-white text-xs">{{this.specs.hardness_sh}} Sh A</div>
+                            </div>
+                            <div class="pb-0!">
+                                <div class="text-default-500 text-xs">Thickness</div>
+                                <div class="text-white text-xs">{{this.specs.thickness_mm}} mm</div>
+                            </div>
+                        </div>
+
+                        <a href="/product/{{this.id}}.html" class="mt-6 w-full text-center py-2.5 px-4 bg-primary hover:bg-primary-3 text-white text-sm font-semibold rounded-md transition-colors block">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+                {{else}}
+                <div class="col-span-full text-center py-16 bg-white border border-default-300 rounded-xl">
+                    <div class="size-16 rounded-full bg-default-100 text-default-500 flex items-center justify-center mx-auto mb-4">
+                        <i class="iconify tabler--alert-circle size-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-default-800">Products Coming Soon</h3>
+                    <p class="text-default-500 mt-2">Custom configurations for this material can be formulated. Contact our sales department.</p>
+                </div>
+                {{/each}}
+            </div>
+
+            <!-- Other Materials Navigation -->
+            <div class="mt-20 pt-10 border-t border-default-300">
+                <h3 class="text-xl font-bold text-default-900 mb-6">Other Materials</h3>
+                <div class="flex flex-wrap gap-2.5">
+                    {{#each relatedCategories}}
+                    <a href="/products/{{this.slug}}.html" class="px-4 py-2 text-xs font-semibold rounded-full border border-default-300 bg-white text-default-800 hover:border-primary hover:text-primary transition-all">{{this.name}}</a>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 pointer-events-none">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(/assets/images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+    </section>
+
+    {{> footer }}
+
+</body>
+
+</html>

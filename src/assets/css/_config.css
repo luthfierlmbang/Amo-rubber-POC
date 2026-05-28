@@ -1,0 +1,36 @@
+/* Themes Config */
+@theme {
+
+    --font-heading: "Mona Sans", sans-serif;
+    --font-body: "Geist", sans-serif;
+
+    --color-primary: #c8370b;
+    --color-primary-1: #f66234;
+    --color-primary-2: #c8370b;
+    --color-primary-3: #9e3211;
+
+    --color-body-bg: var(--color-white);
+    --color-body-color: var(--color-zinc-600);
+
+    --color-default-50: var(--color-zinc-50);
+    --color-default-100: var(--color-zinc-100);
+    --color-default-200: var(--color-zinc-200);
+    --color-default-300: var(--color-zinc-300);
+    --color-default-400: var(--color-zinc-400);
+    --color-default-500: var(--color-zinc-500);
+    --color-default-600: var(--color-zinc-600);
+    --color-default-700: var(--color-zinc-700);
+    --color-default-800: var(--color-zinc-800);
+    --color-default-900: var(--color-zinc-900);
+    --color-default-950: var(--color-zinc-950);
+
+    --tw-leading: 1.3em;
+    --text-xs--line-height: 1.3em;
+    --text-sm--line-height: 1.3em;
+    --text-base--line-height: 1.3em;
+    --text-lg--line-height: 1.3em;
+    --text-xl--line-height: 1.3em;
+    --text-2xl--line-height: 1.3em;
+    --text-3xl--line-height: 1.3em;
+    --text-7xl--line-height: 1.1;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> title-meta title="Contact Us - AMO Rubber" }}
+
+    {{> head-css}}
+</head>
+
+<body>
+
+    {{> navbar }}
+
+    <section class="overflow-hidden relative size-full lg:pt-50 pt-25 pb-12.5 bg-default-100">
+        <div class="container-full relative z-10">
+            <div class="grid xl:grid-cols-2 items-start xl:gap-20 gap-12.5 mb-20">
+                <div class="h-full flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4 inline-flex items-center gap-1.5 rounded-2xl py-1.25 px-3.5 bg-white border border-default-300 motion-preset-slide-up motion-duration-500">
+                            <div class="size-2 bg-primary"></div>
+                            <div class="text-sm text-default-900">Get in Touch</div>
+                        </div>
+
+                        <h1 class="lg:text-7xl md:text-[56px] text-[48px] font-bold text-default-900 mb-7.5 motion-preset-slide-up motion-duration-500 motion-delay-150">We're Ready <span class="text-primary">to Listen</span></h1>
+
+                        <p class="mb-10 text-default-600 max-w-lg leading-relaxed motion-preset-slide-up motion-duration-500 motion-delay-300">
+                            Have technical questions, need custom compound configurations, or want to request a wholesale quotation? Contact us today. Our B2B sales team is ready to assist you.
+                        </p>
+
+                        <!-- WhatsApp Direct Chat CTA -->
+                        <a href="https://wa.me/{{company.phones.wa_raw}}?text=Hi%20AMO%20Rubber%2C%20I%20have%20an%20inquiry%20regarding%20industrial%20rubber%20sheets." target="_blank" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-[#25D366] text-base font-medium text-white transition-all hover:scale-105 shadow-md">
+                            <span class="py-3.75 ps-6">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Chat via WhatsApp
+                                    </span>
+                                    <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Chat via WhatsApp
+                                    </span>
+                                </span>
+                            </span>
+
+                            <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-default-900 text-white">
+                                <span class="relative block overflow-hidden">
+                                    <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--brand-whatsapp flex size-6"></i>
+                                    </span>
+                                    <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        <i class="iconify tabler--brand-whatsapp flex size-6"></i>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-10 mt-12 border-t border-default-300 pt-10">
+                        <div>
+                            <div class="text-primary mb-4 font-bold">// Contact Channels //</div>
+                            <div class="flex flex-col gap-2 text-sm text-default-800">
+                                <div><strong>Phone:</strong> <a href="tel:{{company.phones.main}}" class="hover:text-primary transition-all">{{company.phones.main}}</a></div>
+                                <div><strong>WhatsApp:</strong> <a href="https://wa.me/{{company.phones.wa_raw}}" target="_blank" class="hover:text-primary transition-all">{{company.phones.wa}}</a></div>
+                                <div><strong>Group Email:</strong> <a href="mailto:{{company.emails.group}}" class="hover:text-primary transition-all">{{company.emails.group}}</a></div>
+                                <div><strong>Sales Email:</strong> <a href="mailto:{{company.emails.marketing}}" class="hover:text-primary transition-all">{{company.emails.marketing}}</a></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="text-primary mb-4 font-bold">// Coordinates &amp; Locations //</div>
+                            <div class="flex flex-col gap-4 text-xs text-default-800 leading-relaxed">
+                                <div>
+                                    <strong>HQ Office:</strong><br>
+                                    {{company.address_hq}}
+                                </div>
+                                <div>
+                                    <strong>Factory Facility:</strong><br>
+                                    {{company.address_factory}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="p-7.5 bg-linear-to-br from-black via-black to-primary rounded-lg shadow-xl text-white">
+                    <h3 class="text-2xl font-bold mb-6">Send an Inquiry</h3>
+                    <form action="mailto:{{company.emails.marketing}}" method="GET" enctype="text/plain" class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="First-Name" class="text-default-300 block mb-2 text-sm">First name *</label>
+                            <input required class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white px-3 focus:border-primary focus:ring-primary" name="First-Name" type="text" id="First-Name">
+                        </div>
+
+                        <div>
+                            <label for="Last-Name" class="text-default-300 block mb-2 text-sm">Last name *</label>
+                            <input required class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white px-3 focus:border-primary focus:ring-primary" name="Last-Name" type="text" id="Last-Name">
+                        </div>
+
+                        <div>
+                            <label for="company-name" class="text-default-300 block mb-2 text-sm">Company name *</label>
+                            <input required class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white px-3 focus:border-primary focus:ring-primary" name="Company-Name" type="text" id="company-name">
+                        </div>
+
+                        <div>
+                            <label for="phone-number" class="text-default-300 block mb-2 text-sm">Phone number *</label>
+                            <input required class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white px-3 focus:border-primary focus:ring-primary" name="Phone-Number" type="tel" id="phone-number">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="email-address" class="text-default-300 block mb-2 text-sm">Email address *</label>
+                            <input required class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white px-3 focus:border-primary focus:ring-primary" name="Email-Address" type="email" id="email-address">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="subject" class="text-default-300 block mb-2 text-sm">Subject</label>
+                            <input class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white px-3 focus:border-primary focus:ring-primary" name="Subject" type="text" id="subject" placeholder="e.g. Silicone Sheet Bulk Order">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="message" class="text-default-300 block mb-2 text-sm">Message</label>
+                            <textarea required class="w-full bg-default-900 inline-flex border-default-700 rounded text-white p-3 focus:border-primary focus:ring-primary" rows="5" name="Message" id="message" placeholder="Please specify thickness, length, hardness, and quantity requirements..."></textarea>
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <button type="submit" class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-white text-base font-medium text-default-900 transition-all cursor-pointer">
+                                <!-- TEXT -->
+                                <span class="py-3.75 ps-6">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] font-bold">
+                                            Send Inquiry Mail
+                                        </span>
+                                        <span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)] font-bold">
+                                            Send Inquiry Mail
+                                        </span>
+                                    </span>
+                                </span>
+
+                                <!-- ICON -->
+                                <span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+                                    <span class="relative block overflow-hidden">
+                                        <span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                        </span>
+                                        <span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                            <i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+                                        </span>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- HQ Map Embed -->
+            <div class="w-full h-112 rounded-xl overflow-hidden shadow-lg border border-default-300 relative z-10">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15860.297434079815!2d107.15545592882873!3d-6.320760431326466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b828d116c49%3A0xc48c08404a37775!2sJababeka%20II%2C%20Cikarang%20Selatan%2C%20Bekasi%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1716912345678!5m2!1sen!2sid" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0 pointer-events-none">
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+            <div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+        </div>
+
+        <div class="absolute inset-0 size-full bg-[url(../images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+    </section>
+
+    {{> footer }}
+
+</body>
+
+</html>
