@@ -8,6 +8,16 @@
 
     body {
         @apply font-body bg-body-bg text-body-color md:text-lg text-base leading-[1.3em] font-medium overflow-x-clip;
+        opacity: 0;
+        transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    body.page-loaded {
+        opacity: 1;
+    }
+
+    body.page-fading-out {
+        opacity: 0;
     }
 
     h1,
@@ -90,3 +100,42 @@ textarea {
     animation: infinite-scroll-inverse 100s linear infinite;
     will-change: transform;
 }
+
+/* Scroll Entrance Animations (Framer-like) */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animations for lists/grids */
+.scroll-animate-stagger > * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-animate-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animate-stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+.scroll-animate-stagger.is-visible > *:nth-child(2) { transition-delay: 0.1s; }
+.scroll-animate-stagger.is-visible > *:nth-child(3) { transition-delay: 0.15s; }
+.scroll-animate-stagger.is-visible > *:nth-child(4) { transition-delay: 0.2s; }
+.scroll-animate-stagger.is-visible > *:nth-child(5) { transition-delay: 0.25s; }
+.scroll-animate-stagger.is-visible > *:nth-child(6) { transition-delay: 0.3s; }
+.scroll-animate-stagger.is-visible > *:nth-child(7) { transition-delay: 0.35s; }
+.scroll-animate-stagger.is-visible > *:nth-child(8) { transition-delay: 0.4s; }
+.scroll-animate-stagger.is-visible > *:nth-child(9) { transition-delay: 0.45s; }
+.scroll-animate-stagger.is-visible > *:nth-child(10) { transition-delay: 0.5s; }
+.scroll-animate-stagger.is-visible > *:nth-child(11) { transition-delay: 0.55s; }
+.scroll-animate-stagger.is-visible > *:nth-child(12) { transition-delay: 0.6s; }
