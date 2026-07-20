@@ -11,7 +11,7 @@
 
 ### 1.1 Identitas
 
-- **Brand**: AMO Rubber — PT Abadi Makmur Optimal
+- **Brand**: AMO Rubber — Abadi Makmur Optimal
 - **HQ**: Jababeka II, Cikarang Selatan, Bekasi, Jawa Barat
 - **Manufaktur**: Chonburi, Thailand (Jingdong CS Rubber + AEP Venture Bangkok)
 - **Tahun**: berdiri 2017

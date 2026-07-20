@@ -1,6 +1,6 @@
 # AMO Rubber PoC — B2B Catalogue Website
 
-This repository contains the catalog-only B2B website for **AMO Rubber (PT Abadi Makmur Optimal)**, converted from the Manufactt template.
+This repository contains the catalog-only B2B website for **AMO Rubber (Abadi Makmur Optimal)**, converted from the Manufactt template.
 
 The website features 15 dynamic material category pages and 15 product details pages generated from structured data layers, with a clean corporate design, dynamic filters, and a floating WhatsApp widget.
 
